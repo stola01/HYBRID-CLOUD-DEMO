@@ -1,0 +1,12 @@
+{
+  "connector.class": "DatagenSource",
+  "name": "DatagenSourceConnector_users",
+  "kafka.api.key": "KZDKGTZ3JRO5SQH5",
+  "kafka.api.secret": "Yw4VoJIy+E4UuXoOYyxgL4XD8O/WGQhBPhROta/w3Jkt+42h6oNS0SF/yw1d+Smp",
+  "kafka.topic": "users",
+  "output.data.format": "JSON",
+  "quickstart": "USERS",
+  "max.interval": "1000",
+  "tasks.max": "1"
+}
+

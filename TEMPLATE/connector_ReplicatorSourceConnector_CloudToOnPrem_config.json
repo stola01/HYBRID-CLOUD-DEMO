@@ -1,0 +1,24 @@
+{
+  "name": "ReplicatorSourceConnector_CloudToOnPrem",
+  "config": {
+    "connector.class": "io.confluent.connect.replicator.ReplicatorSourceConnector",
+    "key.converter": "io.confluent.connect.replicator.util.ByteArrayConverter",
+    "value.converter": "io.confluent.connect.replicator.util.ByteArrayConverter",
+    "header.converter": "io.confluent.connect.replicator.util.ByteArrayConverter",
+    "tasks.max": "1",
+    "errors.log.enable": true,
+    "errors.log.include.messages": true,
+    "topic.whitelist": "users,pageviews",
+    "src.kafka.bootstrap.servers": "XXX-CCBS-XXX:9092",
+    "src.kafka.client.id": "Lawrence",
+    "src.kafka.security.protocol": "SASL_SSL",
+    "src.kafka.ssl.endpoint.identification.algorithm": "https",
+    "src.kafka.sasl.mechanism": "PLAIN",
+    "src.kafka.sasl.jaas.config": "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"XXX-CCAPIKEY-XXX\" password=\"XXX-CCAPISECRET-XXX\";",
+    "dest.kafka.bootstrap.servers": "broker:29092",
+    "dest.topic.replication.factor": 1,
+    "topic.auto.create": false,
+    "topic.config.sync": false,
+    "offset.start": "consumer"
+  }
+}

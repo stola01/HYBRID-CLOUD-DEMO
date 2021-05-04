@@ -1,0 +1,11 @@
+{
+  "connector.class": "DatagenSource",
+  "name": "DatagenSourceConnector_pageviews",
+  "kafka.api.key": "XXX-CCAPIKEY-XXX",
+  "kafka.api.secret": "XXX-CCAPISECRET-XXX",
+  "kafka.topic": "pageviews",
+  "output.data.format": "JSON",
+  "quickstart": "PAGEVIEWS",
+  "max.interval": "1000",
+  "tasks.max": "1"
+}
