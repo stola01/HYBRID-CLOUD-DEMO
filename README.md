@@ -35,6 +35,12 @@ ccloud login --save
 
 ### 3. Set up Confluent Cloud - Environemt, Cluster, API Key
 
+```
+# Edit .env, and set name for the Environment (CCENVNAME), and Cluster (CCCLUSTERNAME)
+-> Edit .env
+
+```
+
 #### Env
 
 ```
