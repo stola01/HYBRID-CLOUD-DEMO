@@ -20,7 +20,7 @@ curl -L --http1.1 https://cnfl.io/ccloud-cli | sh -s -- -b /usr/local/bin
 
 # Optional - enable autocompletio
 apt-get install bash-completion
-ccloud completion bash > /etc/bash\_completion.d/ccloud
+ccloud completion bash > /etc/bash_completion.d/ccloud
 source /etc/bash-completion # Also set this in bashrc etc for other sessions to pick up
 
 ```
