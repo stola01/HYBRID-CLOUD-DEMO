@@ -36,7 +36,7 @@ ccloud login --save
 ### 3. Set up Confluent Cloud - Environemt, Cluster, API Key
 
 ```
-# Edit .env, and set name for the Environment (CCENVNAME), and Cluster (CCCLUSTERNAME)
+# Edit .env, and set names for the Environment (CCENVNAME), and Cluster (CCCLUSTERNAME)
 -> Edit .env
 
 ```
@@ -172,7 +172,7 @@ docker-compose exec broker kafka-console-consumer --bootstrap-server localhost:9
 
 
 
-### 12. Create the ksql streams and tables
+### 12. Create the ksqlDB streams and tables
 ```
 # Create pageviews stream
 docker-compose exec -T ksqldb-cli ksql http://ksqldb-server:8088 < ./_131_ksql-create-pageview-stream.sql
