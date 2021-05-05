@@ -69,7 +69,7 @@ ccloud kafka cluster list
 # If not create one
 ./_102_cloud_cluster-create.sh
 
-# Set CCCLUSTER to the ID, and CCBS to bootstrap host, of the cluster in the .env file to the ID of the new environment
+# Set CCCLUSTER to the ID, and CCBS to bootstrap host, of the cluster in the .env file
 # (if using an existing cluster, use ccloud kafka cluster describe to get the CCBS)
 -> Edit .env
 
@@ -99,7 +99,7 @@ ccloud api-key list --resource \${CCCLUSTER}
 
 ### 4. Generate the scripts from the templates
 ```
-# If you get errors, check your key for the "@" symbol and edit the sed statement to avoid it
+# If you get errors, check your key for the "@" symbol and edit the sed statement to avoid it (use a delimiter that is not in the key)
 ./_104_generate-scripts.sh
 ```
 
