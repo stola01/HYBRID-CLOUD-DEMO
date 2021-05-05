@@ -2,7 +2,7 @@
 
 ## Pre-requsits
 - docker, docker-compose
-- curl, jq
+- curl, jq (optional)
 - Confluent Cloud account
 
 ### 1. Set up the CLI
@@ -153,12 +153,17 @@ docker-compose up -d
 
 ### 10. Start the replicator
 ```
-# Also, script:
+# Either
+./_122_replicator-create.sh
+
+# Or, if you have jq installed, format the output
+./_122_replicator-create.sh | jq .
+
+# Also, see script:
 #   123 Get replicator status
 #   124 Delete the replicator
 #   125 Delete the replicator consumer group
 #   126 Remove the offsets from the replicator consumer group
-./_122_replicator-create.sh
 ```
 
 
