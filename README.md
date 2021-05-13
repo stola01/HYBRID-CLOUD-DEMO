@@ -37,8 +37,9 @@ ccloud login --save
 
 ```
 # Edit .env, and set names for the Environment (CCENVNAME), and Cluster (CCCLUSTERNAME)
+# Optionally, change the values for the cloud vendor, region, cluster type and availability choice
+# Note: if you use a cluster type other than basic, edit the cluster creation script to add additional arguments
 -> Edit .env
-
 ```
 
 #### Env

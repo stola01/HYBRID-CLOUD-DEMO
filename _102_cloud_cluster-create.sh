@@ -8,11 +8,11 @@ then
 	exit 1
 fi
 
-echo ">>> Creating cluster ${CCCLUSTERNAME}"
+echo ">>> Creating cluster ${CCCLUSTERNAME} (${CCCLUSTERTYPE}, ${CCCLUSTERAZ}) in ${CCCLOUD} region ${CCREGION}"
 ccloud kafka cluster create ${CCCLUSTERNAME} \
-    --cloud "aws" \
-    --region "eu-west-1" \
-    --availability "single-zone" \
-    --type "basic" 
+    --cloud "${CCCLOUD}" \
+    --region "${CCREGION}" \
+    --availability "${CCCLUSTERAZ}" \
+    --type "${CCCLUSTERTYPE}" 
 echo
 echo ">>> Set CCCLUSTER to the ID and CCBS to the bootstrap host (just the host, no protocol or port) of the cluster ${CCCLUSTERNAME} in the .env file"
