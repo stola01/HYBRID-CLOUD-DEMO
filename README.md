@@ -122,12 +122,12 @@ ccloud api-key list --resource \${CCCLUSTER}
 -> Edit .env
 
 # Consume using the cloud cli
-ccloud kafka topic consumer --from-beginning user
-ccloud kafka topic consumer --from-beginning pageviews
+ccloud kafka topic consume --from-beginning users
+ccloud kafka topic consume --from-beginning pageviews
 
 # Or with kafka-console-consumer
 source .env
-docker-compose exec broker kafka-console-consumer --bootstrap-server ${CCBS}:9092 --consumer.config /tmp/SCRIPT/ccloud.client.properties --from-beginning --topic user
+docker-compose exec broker kafka-console-consumer --bootstrap-server ${CCBS}:9092 --consumer.config /tmp/SCRIPT/ccloud.client.properties --from-beginning --topic users
 docker-compose exec broker kafka-console-consumer --bootstrap-server ${CCBS}:9092 --consumer.config /tmp/SCRIPT/ccloud.client.properties --from-beginning --topic pageviews
 ```
 
