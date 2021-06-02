@@ -204,6 +204,6 @@ docker-compose exec schema-registry kafka-avro-console-consumer --bootstrap-serv
 
 ### 14. Explore the data flow
 ```
--> Point a brower at http://localhost:9091
+-> Point a browser at http://localhost:9091
 ```
 
